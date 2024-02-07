@@ -1,0 +1,302 @@
+:root {
+  --main-background-color:none;
+  --text-color: white;
+  --social-media-link-color: white;
+  --social-media-link-hover-color: #ddd;
+  --purplebg : rgb(36 35 89);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(36 35 89);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(182 184 213);
+  color: black;
+}
+
+.topnav a.active {
+  background-color:rgb( 121 81 142);
+  color: white;
+}
+
+body {
+ 
+  background-size:cover;
+  backdrop-filter: blur(3px);
+  width: 100%;
+  margin: 0 auto;
+  font-family:"andika", "Roboto Mono", "Space Grotesk","system-ui", "-apple-system",BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue","sans-serif";
+}
+.BGastro{
+  background-size:cover;
+  background-position-x:center;
+  background-position-y:top;
+
+}
+
+.hero-text{
+  color: #f2f7f2;
+  font-size: 40px;
+  text-align: center;  
+
+}
+.martxt {
+  color:rgb(239, 201, 104);
+  font-weight: 600;
+  
+}
+
+.titrg1{
+  color: white;
+  margin-bottom: 20px;
+}
+section{
+margin-bottom: 25px;
+}
+h1{
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.m1 {
+  display: flex;
+ box-shadow: 0px 0px 40px  rgb(89, 230, 153);
+  width:70% ;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 15%;
+  color: white;
+
+
+}
+.m2{
+  display:inline-block;
+  backdrop-filter: blur(150%);
+  width: 60%;
+  height: 550px;
+  border-radius: 20px;
+  
+
+}
+
+.mp1{
+ 
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40%;
+  color: rgb(245, 242, 242);
+  font-weight:500;
+  padding-left: 10px;
+  padding-right: 10px;
+  backdrop-filter: blur(180%);
+  text-align: justify;
+  align-items: center;
+  line-height: 180%;
+}
+.bggal{
+background-size:cover;
+  background-position-x:center;
+  background-position-y:top;
+ 
+}
+
+
+
+#gallery-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.wrapper {
+    
+  display: grid;
+  height: 800px;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 60px;
+}
+
+
+
+.APOD-paragraph {
+  font-size: 20px;
+}
+
+.APOD-image {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+
+h5 {
+  margin-left: 35px;
+}
+
+.fa-brands {
+  color: #ffffff;
+  padding-right: 20px;
+}
+.Impressum {
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+.img-api{
+  width: 80%;
+  height: 80%;
+  align-items: center;
+  object-fit: cover;
+}
+#btn1 {
+  width: 100px;
+  height: 20px;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  bottom: 0px;
+ background-color: var(--purplebg);
+  margin-top: 50px;
+
+
+}
+footer div {
+  width: 33%;
+  height: 60px;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+  
+
+}
+.fleft img{
+  width: 60px;
+  height: 60px;
+  margin-left: 0;
+  }
+  .fleft div {
+    float: left;
+  }
+.pfooter{
+  
+    color: white; 
+    width: 100%;
+    margin-top: 20px;
+   
+  }
+.logodiv{
+  width: 60px;;
+}
+.fmid{
+  text-align: center;
+  
+  
+}
+.fmid i {
+  font-size: 2em; 
+  margin: 0 10px;
+  color: white;
+padding-top: 12px;
+
+}
+
+.fmid a{
+
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  
+}
+.fright {
+  color: white;
+  padding-top: 10px;
+  padding-left: 90px;
+  text-align: center;
+}
+
+content {
+  display: block;
+  text-align: center;
+  width: 60%;
+  height: 400px;
+  margin-left: 20%;
+  color: white;
+
+}
+content p {
+  text-align: justify;
+  margin-top: 25px;
+  line-height: 180%;
+}
+
+@media (max-width: 880px) {
+footer{
+  display: block; 
+  
+}
+footer div {
+  width: 100%;
+}
+  }
+
+
+/* astronauts styles */
+.slider-container {
+  width: 60%;
+  height: 350px;
+  margin-left: 20%;
+  margin-top: 50px;
+  overflow: hidden;
+  box-shadow: 0px 0px 40px  rgb(89, 230, 153);
+  border-radius: 20px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.titrastro{
+ padding-top: 40px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+.formtxt {
+  text-align: center;
+  margin-top: 4%;
+  color: ;
+
+}
